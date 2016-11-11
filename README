@@ -1,0 +1,8 @@
+Build Docker image
+docker build -t gvar .
+
+Start docker container
+docker run -d -ti --entrypoint=/bin/bash --name=gvar -v /mnt/goes:/mnt gvar
+
+Exec commands
+docker exec gvar /gvar/gvar
